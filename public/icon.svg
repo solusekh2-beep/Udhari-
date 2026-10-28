@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F3E2E"/>
+      <stop offset="50%" stop-color="#14532D"/>
+      <stop offset="100%" stop-color="#06251B"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle inner border -->
+  <rect x="12" y="12" width="488" height="488" rx="116" fill="none" stroke="#22c55e" stroke-opacity="0.2" stroke-width="6"/>
+
+  <!-- Ledger Book Illustration -->
+  <g filter="url(#shadow)">
+    <!-- Book Backing -->
+    <rect x="96" y="96" width="320" height="320" rx="36" fill="#F8F9FA"/>
+    <!-- Book Spine Ribbon / Edge -->
+    <rect x="96" y="96" width="48" height="320" rx="20" fill="url(#goldGrad)"/>
+    <!-- Page Lines -->
+    <line x1="170" y1="160" x2="380" y2="160" stroke="#E2E8F0" stroke-width="10" stroke-linecap="round"/>
+    <line x1="170" y1="210" x2="350" y2="210" stroke="#E2E8F0" stroke-width="10" stroke-linecap="round"/>
+    <line x1="170" y1="260" x2="380" y2="260" stroke="#E2E8F0" stroke-width="10" stroke-linecap="round"/>
+    <!-- Rupee Seal Stamp -->
+    <circle cx="310" cy="300" r="55" fill="url(#bgGrad)"/>
+    <circle cx="310" cy="300" r="48" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+    <text x="310" y="324" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="64" font-weight="900" fill="#FDE047" text-anchor="middle">₹</text>
+  </g>
+</svg>

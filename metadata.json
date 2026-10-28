@@ -1,0 +1,6 @@
+{
+  "name": "Udhari Khata - Digital Ledger & UPI Dukaan Book",
+  "description": "Smart digital ledger for dukandars to track customer udhari, send WhatsApp payment reminders, generate dynamic UPI payment QR codes, and record verified payments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
